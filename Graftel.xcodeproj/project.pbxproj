@@ -1,0 +1,924 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A5FA4D80075D5749C813257 /* Pods_GraftelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C730B0DA5270142134AA3A /* Pods_GraftelUITests.framework */; };
+		5D1DA05C1DD11CF800F40A3E /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1DA05B1DD11CF800F40A3E /* Password.swift */; };
+		5D2C9CCC1DC8E65400556326 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2C9CCB1DC8E65400556326 /* Reachability.m */; };
+		5D363E6C1D833ED60094E4DF /* DeviceInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D363E6A1D833ED60094E4DF /* DeviceInfoCell.swift */; };
+		5D363E6D1D833ED60094E4DF /* QuoteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D363E6B1D833ED60094E4DF /* QuoteRequest.swift */; };
+		5D727CEC1D79EEBC00AED5AB /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D727CEB1D79EEBC00AED5AB /* Settings.swift */; };
+		5D727CEE1D7A090300AED5AB /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D727CED1D7A090300AED5AB /* ForgotPassword.swift */; };
+		5D84BB231D9AC417006700CA /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D84BB221D9AC417006700CA /* SearchResults.swift */; };
+		5D84BB271D9D6229006700CA /* ReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D84BB261D9D6229006700CA /* ReportCell.swift */; };
+		5D8F79CE1DA3F4F200235EFB /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79CD1DA3F4F200235EFB /* Menu.swift */; };
+		5D8F79E61DA40B7E00235EFB /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79DF1DA40B7E00235EFB /* QRCodeReader.swift */; };
+		5D8F79E71DA40B7E00235EFB /* QRCodeReaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79E01DA40B7E00235EFB /* QRCodeReaderResult.swift */; };
+		5D8F79E81DA40B7E00235EFB /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79E11DA40B7E00235EFB /* QRCodeViewController.swift */; };
+		5D8F79E91DA40B7E00235EFB /* QRCodeViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79E21DA40B7E00235EFB /* QRCodeViewControllerBuilder.swift */; };
+		5D8F79EA1DA40B7E00235EFB /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79E31DA40B7E00235EFB /* ReaderOverlayView.swift */; };
+		5D8F79EB1DA40B7E00235EFB /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79E41DA40B7E00235EFB /* SwitchCameraButton.swift */; };
+		5D8F79EC1DA40B7E00235EFB /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79E51DA40B7E00235EFB /* ToggleTorchButton.swift */; };
+		5D8F79F11DA4298300235EFB /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79F01DA4298300235EFB /* PDFView.swift */; };
+		5D8F79F31DA4350200235EFB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79F21DA4350200235EFB /* Constant.swift */; };
+		5D932B7B1D6F2F8D00944F1D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D932B7A1D6F2F8D00944F1D /* User.swift */; };
+		5D932B7D1D70C32600944F1D /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D932B7C1D70C32600944F1D /* Search.swift */; };
+		5DA64B7D1D5A28C9009D81C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA64B7C1D5A28C9009D81C5 /* AppDelegate.swift */; };
+		5DA64B7F1D5A28C9009D81C5 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA64B7E1D5A28C9009D81C5 /* Login.swift */; };
+		5DA64B821D5A28C9009D81C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DA64B801D5A28C9009D81C5 /* Main.storyboard */; };
+		5DA64B851D5A28C9009D81C5 /* Graftel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DA64B831D5A28C9009D81C5 /* Graftel.xcdatamodeld */; };
+		5DA64B871D5A28C9009D81C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DA64B861D5A28C9009D81C5 /* Assets.xcassets */; };
+		5DA64B8A1D5A28C9009D81C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DA64B881D5A28C9009D81C5 /* LaunchScreen.storyboard */; };
+		5DA64B951D5A28C9009D81C5 /* GraftelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA64B941D5A28C9009D81C5 /* GraftelTests.swift */; };
+		5DA64BA01D5A28C9009D81C5 /* GraftelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA64B9F1D5A28C9009D81C5 /* GraftelUITests.swift */; };
+		5DA64BC31D5A2C3D009D81C5 /* ContactUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA64BB61D5A2C3C009D81C5 /* ContactUs.swift */; };
+		5DA64BC41D5A2C3D009D81C5 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA64BB71D5A2C3C009D81C5 /* DeviceInfo.swift */; };
+		5DA64BC81D5A2C3D009D81C5 /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA64BBB1D5A2C3C009D81C5 /* Orders.swift */; };
+		5DA64BC91D5A2C3D009D81C5 /* OrdersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA64BBC1D5A2C3C009D81C5 /* OrdersCell.swift */; };
+		5DA64BCA1D5A2C3D009D81C5 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA64BBD1D5A2C3D009D81C5 /* Profile.swift */; };
+		5DA64BCB1D5A2C3D009D81C5 /* QuoteDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA64BBE1D5A2C3D009D81C5 /* QuoteDetail.swift */; };
+		5DA64BCC1D5A2C3D009D81C5 /* QuoteDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA64BBF1D5A2C3D009D81C5 /* QuoteDetailCell.swift */; };
+		5DA64BCE1D5A2C3D009D81C5 /* SendMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA64BC11D5A2C3D009D81C5 /* SendMessage.swift */; };
+		5DA64BCF1D5A2C3D009D81C5 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA64BC21D5A2C3D009D81C5 /* Services.swift */; };
+		5DC0F0731D62167F00AB83C8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC0F0721D62167F00AB83C8 /* SWRevealViewController.m */; };
+		5DC0F0761D62169C00AB83C8 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC0F0751D62169C00AB83C8 /* DLRadioButton.m */; };
+		5DC0F07D1D678FCA00AB83C8 /* Scan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC0F07C1D678FCA00AB83C8 /* Scan.swift */; };
+		A12B226C5FEEA6939E481C7B /* Pods_Graftel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F286B32F4E9F3305390F4673 /* Pods_Graftel.framework */; };
+		BE8D73C184558798EDECAF7A /* Pods_GraftelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C751DDC8521F7CB3F2A2BA /* Pods_GraftelTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DA64B911D5A28C9009D81C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DA64B711D5A28C8009D81C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DA64B781D5A28C8009D81C5;
+			remoteInfo = Graftel;
+		};
+		5DA64B9C1D5A28C9009D81C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DA64B711D5A28C8009D81C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DA64B781D5A28C8009D81C5;
+			remoteInfo = Graftel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5D0B3EF01DBFCA7500AA50EF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2E0F6CAE70858347943EA9E3 /* Pods-GraftelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraftelUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GraftelUITests/Pods-GraftelUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		57FD4E0BE57BB42589DEDAB7 /* Pods-GraftelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraftelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GraftelTests/Pods-GraftelTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D1DA05B1DD11CF800F40A3E /* Password.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
+		5D1DA9461D5A35E40085BEAA /* Graftel-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Graftel-Bridging-Header.h"; sourceTree = "<group>"; };
+		5D2C9CCA1DC8E65400556326 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		5D2C9CCB1DC8E65400556326 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		5D363E6A1D833ED60094E4DF /* DeviceInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfoCell.swift; sourceTree = "<group>"; };
+		5D363E6B1D833ED60094E4DF /* QuoteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteRequest.swift; sourceTree = "<group>"; };
+		5D727CEB1D79EEBC00AED5AB /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		5D727CED1D7A090300AED5AB /* ForgotPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		5D84BB221D9AC417006700CA /* SearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		5D84BB261D9D6229006700CA /* ReportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportCell.swift; sourceTree = "<group>"; };
+		5D8F79CD1DA3F4F200235EFB /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		5D8F79DF1DA40B7E00235EFB /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeReader.swift; path = "../../../Documents/iOS Files/QRCodeReader.swift-master/QRCodeReader/QRCodeReader.swift"; sourceTree = "<group>"; };
+		5D8F79E01DA40B7E00235EFB /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeReaderResult.swift; path = "../../../Documents/iOS Files/QRCodeReader.swift-master/QRCodeReader/QRCodeReaderResult.swift"; sourceTree = "<group>"; };
+		5D8F79E11DA40B7E00235EFB /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeViewController.swift; path = "../../../Documents/iOS Files/QRCodeReader.swift-master/QRCodeReader/QRCodeViewController.swift"; sourceTree = "<group>"; };
+		5D8F79E21DA40B7E00235EFB /* QRCodeViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeViewControllerBuilder.swift; path = "../../../Documents/iOS Files/QRCodeReader.swift-master/QRCodeReader/QRCodeViewControllerBuilder.swift"; sourceTree = "<group>"; };
+		5D8F79E31DA40B7E00235EFB /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReaderOverlayView.swift; path = "../../../Documents/iOS Files/QRCodeReader.swift-master/QRCodeReader/ReaderOverlayView.swift"; sourceTree = "<group>"; };
+		5D8F79E41DA40B7E00235EFB /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwitchCameraButton.swift; path = "../../../Documents/iOS Files/QRCodeReader.swift-master/QRCodeReader/SwitchCameraButton.swift"; sourceTree = "<group>"; };
+		5D8F79E51DA40B7E00235EFB /* ToggleTorchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToggleTorchButton.swift; path = "../../../Documents/iOS Files/QRCodeReader.swift-master/QRCodeReader/ToggleTorchButton.swift"; sourceTree = "<group>"; };
+		5D8F79F01DA4298300235EFB /* PDFView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
+		5D8F79F21DA4350200235EFB /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		5D932B7A1D6F2F8D00944F1D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5D932B7C1D70C32600944F1D /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		5DA64B791D5A28C8009D81C5 /* Graftel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graftel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA64B7C1D5A28C9009D81C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DA64B7E1D5A28C9009D81C5 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		5DA64B811D5A28C9009D81C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DA64B841D5A28C9009D81C5 /* Graftel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Graftel.xcdatamodel; sourceTree = "<group>"; };
+		5DA64B861D5A28C9009D81C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DA64B891D5A28C9009D81C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DA64B8B1D5A28C9009D81C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DA64B901D5A28C9009D81C5 /* GraftelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraftelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA64B941D5A28C9009D81C5 /* GraftelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraftelTests.swift; sourceTree = "<group>"; };
+		5DA64B961D5A28C9009D81C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DA64B9B1D5A28C9009D81C5 /* GraftelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraftelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA64B9F1D5A28C9009D81C5 /* GraftelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraftelUITests.swift; sourceTree = "<group>"; };
+		5DA64BA11D5A28C9009D81C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DA64BB61D5A2C3C009D81C5 /* ContactUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUs.swift; sourceTree = "<group>"; };
+		5DA64BB71D5A2C3C009D81C5 /* DeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		5DA64BBB1D5A2C3C009D81C5 /* Orders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
+		5DA64BBC1D5A2C3C009D81C5 /* OrdersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersCell.swift; sourceTree = "<group>"; };
+		5DA64BBD1D5A2C3D009D81C5 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		5DA64BBE1D5A2C3D009D81C5 /* QuoteDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteDetail.swift; sourceTree = "<group>"; };
+		5DA64BBF1D5A2C3D009D81C5 /* QuoteDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteDetailCell.swift; sourceTree = "<group>"; };
+		5DA64BC11D5A2C3D009D81C5 /* SendMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessage.swift; sourceTree = "<group>"; };
+		5DA64BC21D5A2C3D009D81C5 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		5DC0F0711D62167F00AB83C8 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../Documents/iOS Files/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
+		5DC0F0721D62167F00AB83C8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../Documents/iOS Files/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
+		5DC0F0741D62169C00AB83C8 /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = "../../../Documents/iOS Files/DLRadioButton/DLRadioButton.h"; sourceTree = "<group>"; };
+		5DC0F0751D62169C00AB83C8 /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = "../../../Documents/iOS Files/DLRadioButton/DLRadioButton.m"; sourceTree = "<group>"; };
+		5DC0F07C1D678FCA00AB83C8 /* Scan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scan.swift; sourceTree = "<group>"; };
+		7D1C1A8660AFEA50EB26E59C /* Pods-GraftelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraftelUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GraftelUITests/Pods-GraftelUITests.release.xcconfig"; sourceTree = "<group>"; };
+		847A30298ED37ABA5284F22E /* Pods-Graftel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graftel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Graftel/Pods-Graftel.debug.xcconfig"; sourceTree = "<group>"; };
+		95C730B0DA5270142134AA3A /* Pods_GraftelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraftelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2C751DDC8521F7CB3F2A2BA /* Pods_GraftelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraftelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B73F8510279E4BB444DE5316 /* Pods-Graftel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graftel.release.xcconfig"; path = "Pods/Target Support Files/Pods-Graftel/Pods-Graftel.release.xcconfig"; sourceTree = "<group>"; };
+		DB832CA4D04FF5074A132145 /* Pods-GraftelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraftelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GraftelTests/Pods-GraftelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F286B32F4E9F3305390F4673 /* Pods_Graftel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Graftel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DA64B761D5A28C8009D81C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12B226C5FEEA6939E481C7B /* Pods_Graftel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA64B8D1D5A28C9009D81C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8D73C184558798EDECAF7A /* Pods_GraftelTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA64B981D5A28C9009D81C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5FA4D80075D5749C813257 /* Pods_GraftelUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D2C9CC91DC8E65400556326 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				5D2C9CCA1DC8E65400556326 /* Reachability.h */,
+				5D2C9CCB1DC8E65400556326 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		5DA64B701D5A28C8009D81C5 = {
+			isa = PBXGroup;
+			children = (
+				5DA64B7B1D5A28C9009D81C5 /* Graftel */,
+				5DA64B931D5A28C9009D81C5 /* GraftelTests */,
+				5DA64B9E1D5A28C9009D81C5 /* GraftelUITests */,
+				5DA64B7A1D5A28C8009D81C5 /* Products */,
+				98696EB5E9A5C4C1FF6BCB90 /* Pods */,
+				6899A24FA5A084E97D2615C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5DA64B7A1D5A28C8009D81C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DA64B791D5A28C8009D81C5 /* Graftel.app */,
+				5DA64B901D5A28C9009D81C5 /* GraftelTests.xctest */,
+				5DA64B9B1D5A28C9009D81C5 /* GraftelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DA64B7B1D5A28C9009D81C5 /* Graftel */ = {
+			isa = PBXGroup;
+			children = (
+				5D1DA9461D5A35E40085BEAA /* Graftel-Bridging-Header.h */,
+				5D2C9CC91DC8E65400556326 /* Reachability */,
+				5DC0F07E1D6790D600AB83C8 /* QRCodeReader */,
+				5DA64BB21D5A2BE9009D81C5 /* DLRadioButton */,
+				5DA64BAD1D5A2BB4009D81C5 /* SWRevealViewController */,
+				5D932B7A1D6F2F8D00944F1D /* User.swift */,
+				5D727CED1D7A090300AED5AB /* ForgotPassword.swift */,
+				5D1DA05B1DD11CF800F40A3E /* Password.swift */,
+				5DA64B7E1D5A28C9009D81C5 /* Login.swift */,
+				5DA64BBC1D5A2C3C009D81C5 /* OrdersCell.swift */,
+				5DA64BBB1D5A2C3C009D81C5 /* Orders.swift */,
+				5DC0F07C1D678FCA00AB83C8 /* Scan.swift */,
+				5D363E6B1D833ED60094E4DF /* QuoteRequest.swift */,
+				5DA64BBF1D5A2C3D009D81C5 /* QuoteDetailCell.swift */,
+				5DA64BBE1D5A2C3D009D81C5 /* QuoteDetail.swift */,
+				5D363E6A1D833ED60094E4DF /* DeviceInfoCell.swift */,
+				5DA64BB71D5A2C3C009D81C5 /* DeviceInfo.swift */,
+				5DA64BBD1D5A2C3D009D81C5 /* Profile.swift */,
+				5D727CEB1D79EEBC00AED5AB /* Settings.swift */,
+				5D932B7C1D70C32600944F1D /* Search.swift */,
+				5D84BB221D9AC417006700CA /* SearchResults.swift */,
+				5DA64BC21D5A2C3D009D81C5 /* Services.swift */,
+				5DA64BC11D5A2C3D009D81C5 /* SendMessage.swift */,
+				5DA64BB61D5A2C3C009D81C5 /* ContactUs.swift */,
+				5DA64B7C1D5A28C9009D81C5 /* AppDelegate.swift */,
+				5DA64B801D5A28C9009D81C5 /* Main.storyboard */,
+				5DA64B861D5A28C9009D81C5 /* Assets.xcassets */,
+				5DA64B881D5A28C9009D81C5 /* LaunchScreen.storyboard */,
+				5DA64B8B1D5A28C9009D81C5 /* Info.plist */,
+				5DA64B831D5A28C9009D81C5 /* Graftel.xcdatamodeld */,
+				5D84BB261D9D6229006700CA /* ReportCell.swift */,
+				5D8F79CD1DA3F4F200235EFB /* Menu.swift */,
+				5D8F79F01DA4298300235EFB /* PDFView.swift */,
+				5D8F79F21DA4350200235EFB /* Constant.swift */,
+			);
+			path = Graftel;
+			sourceTree = "<group>";
+		};
+		5DA64B931D5A28C9009D81C5 /* GraftelTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DA64B941D5A28C9009D81C5 /* GraftelTests.swift */,
+				5DA64B961D5A28C9009D81C5 /* Info.plist */,
+			);
+			path = GraftelTests;
+			sourceTree = "<group>";
+		};
+		5DA64B9E1D5A28C9009D81C5 /* GraftelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5DA64B9F1D5A28C9009D81C5 /* GraftelUITests.swift */,
+				5DA64BA11D5A28C9009D81C5 /* Info.plist */,
+			);
+			path = GraftelUITests;
+			sourceTree = "<group>";
+		};
+		5DA64BAD1D5A2BB4009D81C5 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5DC0F0711D62167F00AB83C8 /* SWRevealViewController.h */,
+				5DC0F0721D62167F00AB83C8 /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
+			path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController";
+			sourceTree = "<group>";
+		};
+		5DA64BB21D5A2BE9009D81C5 /* DLRadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				5DC0F0741D62169C00AB83C8 /* DLRadioButton.h */,
+				5DC0F0751D62169C00AB83C8 /* DLRadioButton.m */,
+			);
+			name = DLRadioButton;
+			path = "../../../Downloads/DLRadioButton-master 2/DLRadioButton";
+			sourceTree = "<group>";
+		};
+		5DC0F07E1D6790D600AB83C8 /* QRCodeReader */ = {
+			isa = PBXGroup;
+			children = (
+				5D8F79DF1DA40B7E00235EFB /* QRCodeReader.swift */,
+				5D8F79E01DA40B7E00235EFB /* QRCodeReaderResult.swift */,
+				5D8F79E11DA40B7E00235EFB /* QRCodeViewController.swift */,
+				5D8F79E21DA40B7E00235EFB /* QRCodeViewControllerBuilder.swift */,
+				5D8F79E31DA40B7E00235EFB /* ReaderOverlayView.swift */,
+				5D8F79E41DA40B7E00235EFB /* SwitchCameraButton.swift */,
+				5D8F79E51DA40B7E00235EFB /* ToggleTorchButton.swift */,
+			);
+			name = QRCodeReader;
+			path = "../../../Downloads/QRCodeReader.swift-master/QRCodeReader";
+			sourceTree = "<group>";
+		};
+		6899A24FA5A084E97D2615C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F286B32F4E9F3305390F4673 /* Pods_Graftel.framework */,
+				B2C751DDC8521F7CB3F2A2BA /* Pods_GraftelTests.framework */,
+				95C730B0DA5270142134AA3A /* Pods_GraftelUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98696EB5E9A5C4C1FF6BCB90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				847A30298ED37ABA5284F22E /* Pods-Graftel.debug.xcconfig */,
+				B73F8510279E4BB444DE5316 /* Pods-Graftel.release.xcconfig */,
+				DB832CA4D04FF5074A132145 /* Pods-GraftelTests.debug.xcconfig */,
+				57FD4E0BE57BB42589DEDAB7 /* Pods-GraftelTests.release.xcconfig */,
+				2E0F6CAE70858347943EA9E3 /* Pods-GraftelUITests.debug.xcconfig */,
+				7D1C1A8660AFEA50EB26E59C /* Pods-GraftelUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DA64B781D5A28C8009D81C5 /* Graftel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DA64BA41D5A28C9009D81C5 /* Build configuration list for PBXNativeTarget "Graftel" */;
+			buildPhases = (
+				9F3F9E3314B01F7A1088D8CD /* [CP] Check Pods Manifest.lock */,
+				5DA64B751D5A28C8009D81C5 /* Sources */,
+				5DA64B761D5A28C8009D81C5 /* Frameworks */,
+				5DA64B771D5A28C8009D81C5 /* Resources */,
+				ECB548594B1E3D5E1383CEA1 /* [CP] Embed Pods Frameworks */,
+				48FF2645B6A4BDC4D1B10A5E /* [CP] Copy Pods Resources */,
+				5D0B3EF01DBFCA7500AA50EF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Graftel;
+			productName = Graftel;
+			productReference = 5DA64B791D5A28C8009D81C5 /* Graftel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DA64B8F1D5A28C9009D81C5 /* GraftelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DA64BA71D5A28C9009D81C5 /* Build configuration list for PBXNativeTarget "GraftelTests" */;
+			buildPhases = (
+				079EFF9440731DC701EA4AC4 /* [CP] Check Pods Manifest.lock */,
+				5DA64B8C1D5A28C9009D81C5 /* Sources */,
+				5DA64B8D1D5A28C9009D81C5 /* Frameworks */,
+				5DA64B8E1D5A28C9009D81C5 /* Resources */,
+				B92D3B07CF15F1EDD94ADB2D /* [CP] Embed Pods Frameworks */,
+				920F225B2A83CFFC0FC9CDD6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DA64B921D5A28C9009D81C5 /* PBXTargetDependency */,
+			);
+			name = GraftelTests;
+			productName = GraftelTests;
+			productReference = 5DA64B901D5A28C9009D81C5 /* GraftelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5DA64B9A1D5A28C9009D81C5 /* GraftelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DA64BAA1D5A28C9009D81C5 /* Build configuration list for PBXNativeTarget "GraftelUITests" */;
+			buildPhases = (
+				0910FCDEAAED2A66AC712193 /* [CP] Check Pods Manifest.lock */,
+				5DA64B971D5A28C9009D81C5 /* Sources */,
+				5DA64B981D5A28C9009D81C5 /* Frameworks */,
+				5DA64B991D5A28C9009D81C5 /* Resources */,
+				C899441BCE226020064F683E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DA64B9D1D5A28C9009D81C5 /* PBXTargetDependency */,
+			);
+			name = GraftelUITests;
+			productName = GraftelUITests;
+			productReference = 5DA64B9B1D5A28C9009D81C5 /* GraftelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DA64B711D5A28C8009D81C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Graftel;
+				TargetAttributes = {
+					5DA64B781D5A28C8009D81C5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = LF3FA57D2B;
+						LastSwiftMigration = 0800;
+					};
+					5DA64B8F1D5A28C9009D81C5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = LF3FA57D2B;
+						LastSwiftMigration = 0800;
+						TestTargetID = 5DA64B781D5A28C8009D81C5;
+					};
+					5DA64B9A1D5A28C9009D81C5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = LF3FA57D2B;
+						LastSwiftMigration = 0800;
+						TestTargetID = 5DA64B781D5A28C8009D81C5;
+					};
+				};
+			};
+			buildConfigurationList = 5DA64B741D5A28C8009D81C5 /* Build configuration list for PBXProject "Graftel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DA64B701D5A28C8009D81C5;
+			productRefGroup = 5DA64B7A1D5A28C8009D81C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DA64B781D5A28C8009D81C5 /* Graftel */,
+				5DA64B8F1D5A28C9009D81C5 /* GraftelTests */,
+				5DA64B9A1D5A28C9009D81C5 /* GraftelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DA64B771D5A28C8009D81C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA64B8A1D5A28C9009D81C5 /* LaunchScreen.storyboard in Resources */,
+				5DA64B871D5A28C9009D81C5 /* Assets.xcassets in Resources */,
+				5DA64B821D5A28C9009D81C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA64B8E1D5A28C9009D81C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA64B991D5A28C9009D81C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		079EFF9440731DC701EA4AC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0910FCDEAAED2A66AC712193 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		48FF2645B6A4BDC4D1B10A5E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Graftel/Pods-Graftel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		920F225B2A83CFFC0FC9CDD6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GraftelTests/Pods-GraftelTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F3F9E3314B01F7A1088D8CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B92D3B07CF15F1EDD94ADB2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GraftelTests/Pods-GraftelTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C899441BCE226020064F683E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GraftelUITests/Pods-GraftelUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECB548594B1E3D5E1383CEA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Graftel/Pods-Graftel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DA64B751D5A28C8009D81C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D1DA05C1DD11CF800F40A3E /* Password.swift in Sources */,
+				5D8F79E91DA40B7E00235EFB /* QRCodeViewControllerBuilder.swift in Sources */,
+				5DA64BCC1D5A2C3D009D81C5 /* QuoteDetailCell.swift in Sources */,
+				5DA64BC41D5A2C3D009D81C5 /* DeviceInfo.swift in Sources */,
+				5DA64BC91D5A2C3D009D81C5 /* OrdersCell.swift in Sources */,
+				5D8F79F31DA4350200235EFB /* Constant.swift in Sources */,
+				5D8F79EC1DA40B7E00235EFB /* ToggleTorchButton.swift in Sources */,
+				5D8F79EA1DA40B7E00235EFB /* ReaderOverlayView.swift in Sources */,
+				5DA64BCA1D5A2C3D009D81C5 /* Profile.swift in Sources */,
+				5D8F79F11DA4298300235EFB /* PDFView.swift in Sources */,
+				5D8F79EB1DA40B7E00235EFB /* SwitchCameraButton.swift in Sources */,
+				5DA64BC81D5A2C3D009D81C5 /* Orders.swift in Sources */,
+				5D932B7B1D6F2F8D00944F1D /* User.swift in Sources */,
+				5DA64B7F1D5A28C9009D81C5 /* Login.swift in Sources */,
+				5D363E6C1D833ED60094E4DF /* DeviceInfoCell.swift in Sources */,
+				5DA64BCF1D5A2C3D009D81C5 /* Services.swift in Sources */,
+				5DA64BCE1D5A2C3D009D81C5 /* SendMessage.swift in Sources */,
+				5DA64BC31D5A2C3D009D81C5 /* ContactUs.swift in Sources */,
+				5D932B7D1D70C32600944F1D /* Search.swift in Sources */,
+				5DA64B7D1D5A28C9009D81C5 /* AppDelegate.swift in Sources */,
+				5D8F79E71DA40B7E00235EFB /* QRCodeReaderResult.swift in Sources */,
+				5DC0F0731D62167F00AB83C8 /* SWRevealViewController.m in Sources */,
+				5D363E6D1D833ED60094E4DF /* QuoteRequest.swift in Sources */,
+				5DC0F0761D62169C00AB83C8 /* DLRadioButton.m in Sources */,
+				5DC0F07D1D678FCA00AB83C8 /* Scan.swift in Sources */,
+				5D84BB231D9AC417006700CA /* SearchResults.swift in Sources */,
+				5D727CEC1D79EEBC00AED5AB /* Settings.swift in Sources */,
+				5DA64BCB1D5A2C3D009D81C5 /* QuoteDetail.swift in Sources */,
+				5D84BB271D9D6229006700CA /* ReportCell.swift in Sources */,
+				5D8F79CE1DA3F4F200235EFB /* Menu.swift in Sources */,
+				5DA64B851D5A28C9009D81C5 /* Graftel.xcdatamodeld in Sources */,
+				5D8F79E81DA40B7E00235EFB /* QRCodeViewController.swift in Sources */,
+				5D8F79E61DA40B7E00235EFB /* QRCodeReader.swift in Sources */,
+				5D2C9CCC1DC8E65400556326 /* Reachability.m in Sources */,
+				5D727CEE1D7A090300AED5AB /* ForgotPassword.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA64B8C1D5A28C9009D81C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA64B951D5A28C9009D81C5 /* GraftelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA64B971D5A28C9009D81C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA64BA01D5A28C9009D81C5 /* GraftelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DA64B921D5A28C9009D81C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DA64B781D5A28C8009D81C5 /* Graftel */;
+			targetProxy = 5DA64B911D5A28C9009D81C5 /* PBXContainerItemProxy */;
+		};
+		5DA64B9D1D5A28C9009D81C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DA64B781D5A28C8009D81C5 /* Graftel */;
+			targetProxy = 5DA64B9C1D5A28C9009D81C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DA64B801D5A28C9009D81C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DA64B811D5A28C9009D81C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DA64B881D5A28C9009D81C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DA64B891D5A28C9009D81C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DA64BA21D5A28C9009D81C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kangmin Glover (CG6C7YFS3G)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Kangmin Glover (CG6C7YFS3G)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LF3FA57D2B;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DA64BA31D5A28C9009D81C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kangmin Glover (CG6C7YFS3G)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Kangmin Glover (CG6C7YFS3G)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LF3FA57D2B;
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DA64BA51D5A28C9009D81C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 847A30298ED37ABA5284F22E /* Pods-Graftel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Graftel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.graftel.Calibration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Graftel/Graftel-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5DA64BA61D5A28C9009D81C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B73F8510279E4BB444DE5316 /* Pods-Graftel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Graftel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.graftel.Calibration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Graftel/Graftel-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5DA64BA81D5A28C9009D81C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB832CA4D04FF5074A132145 /* Pods-GraftelTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GraftelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.graftel.www.GraftelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graftel.app/Graftel";
+			};
+			name = Debug;
+		};
+		5DA64BA91D5A28C9009D81C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57FD4E0BE57BB42589DEDAB7 /* Pods-GraftelTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GraftelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.graftel.www.GraftelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graftel.app/Graftel";
+			};
+			name = Release;
+		};
+		5DA64BAB1D5A28C9009D81C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0F6CAE70858347943EA9E3 /* Pods-GraftelUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = GraftelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.graftel.www.GraftelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Graftel;
+			};
+			name = Debug;
+		};
+		5DA64BAC1D5A28C9009D81C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D1C1A8660AFEA50EB26E59C /* Pods-GraftelUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = GraftelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.graftel.www.GraftelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Graftel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DA64B741D5A28C8009D81C5 /* Build configuration list for PBXProject "Graftel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DA64BA21D5A28C9009D81C5 /* Debug */,
+				5DA64BA31D5A28C9009D81C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DA64BA41D5A28C9009D81C5 /* Build configuration list for PBXNativeTarget "Graftel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DA64BA51D5A28C9009D81C5 /* Debug */,
+				5DA64BA61D5A28C9009D81C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DA64BA71D5A28C9009D81C5 /* Build configuration list for PBXNativeTarget "GraftelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DA64BA81D5A28C9009D81C5 /* Debug */,
+				5DA64BA91D5A28C9009D81C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DA64BAA1D5A28C9009D81C5 /* Build configuration list for PBXNativeTarget "GraftelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DA64BAB1D5A28C9009D81C5 /* Debug */,
+				5DA64BAC1D5A28C9009D81C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5DA64B831D5A28C9009D81C5 /* Graftel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5DA64B841D5A28C9009D81C5 /* Graftel.xcdatamodel */,
+			);
+			currentVersion = 5DA64B841D5A28C9009D81C5 /* Graftel.xcdatamodel */;
+			path = Graftel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5DA64B711D5A28C8009D81C5 /* Project object */;
+}

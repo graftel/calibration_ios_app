@@ -1,0 +1,6 @@
+framework module Pods_GraftelUITests {
+  umbrella header "Pods-GraftelUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

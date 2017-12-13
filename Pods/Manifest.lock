@@ -1,0 +1,39 @@
+PODS:
+  - AWSCore (2.4.10)
+  - AWSS3 (2.4.10):
+    - AWSCore (= 2.4.10)
+  - CryptoSwift (0.6.0)
+  - SendGrid (0.2.0)
+  - Zip (0.6.0)
+
+DEPENDENCIES:
+  - AWSS3
+  - CryptoSwift (from `https://github.com/krzyzanowskim/CryptoSwift`, branch `master`)
+  - SendGrid (from `https://github.com/scottkawai/sendgrid-swift.git`)
+  - Zip (~> 0.6)
+
+EXTERNAL SOURCES:
+  CryptoSwift:
+    :branch: master
+    :git: https://github.com/krzyzanowskim/CryptoSwift
+  SendGrid:
+    :git: https://github.com/scottkawai/sendgrid-swift.git
+
+CHECKOUT OPTIONS:
+  CryptoSwift:
+    :commit: 13764570021ca73c315c3de18f367e5fdb55d785
+    :git: https://github.com/krzyzanowskim/CryptoSwift
+  SendGrid:
+    :commit: d5c65f49a70da982e80e8b1ffb8e12e7a5c15db1
+    :git: https://github.com/scottkawai/sendgrid-swift.git
+
+SPEC CHECKSUMS:
+  AWSCore: c78eff928514e90075c3bd53f5ff2d9a77f8658e
+  AWSS3: 46dcb199860206d72820942ab82be93597338646
+  CryptoSwift: 4a599b7241b8d3b857d6e2c28867d0bd5d1aae24
+  SendGrid: 12076fd3b483ca69445049afb09429c90345de95
+  Zip: 805fc2fa9d2f05bbb7762d982d7a42ccdcc51f42
+
+PODFILE CHECKSUM: 188834bfd79cbfa6f9af363769c371048cb8f82c
+
+COCOAPODS: 1.0.1
