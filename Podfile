@@ -7,7 +7,7 @@ target 'Graftel' do
 
   # Pods for Graftel
   pod 'AWSS3'
-  pod 'Zip', '~> 0.6'
+  pod 'Zip', '~> 1.1'
   pod 'SendGrid', :git => 'https://github.com/scottkawai/sendgrid-swift.git'
   pod 'CryptoSwift', :git => "https://github.com/krzyzanowskim/CryptoSwift", :branch => "master"
   target 'GraftelTests' do

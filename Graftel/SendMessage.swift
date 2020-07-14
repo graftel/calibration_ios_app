@@ -42,33 +42,33 @@ class SendMessage : UIViewController {
     
     @IBAction func send(_ sender: AnyObject) {
         if name?.text?.isEmpty == true || company?.text?.isEmpty==true || email?.text?.isEmpty==true || message?.text?.isEmpty==true {
-            let alert = UIAlertController(title: "Error", message: "Please enter required fields!", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK!", style: UIAlertActionStyle.default, handler: nil))
+            let alert = UIAlertController(title: "Error", message: "Please enter required fields!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK!", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
         else {
             //Send Mail
-            var yes:Bool = false
-            let session = SendGrid.Session()
-            session.authentication = Authentication.apiKey(SendGridKey)
-            let personalization = Personalization(to: [Address((self.email?.text)!)], bcc: [Address("scott@graftel.com"),Address("kangmin@graftel.com"),Address("esther@graftel.com"),Address("pdavis@graftel.com")])
-            let body:String = "\nThis a confirmation that your quote request has been successfully sent to Graftel, we will respond to you within 24 hours.\n"+"\nThank you for contacting Graftel LLC. Below is the original message.\n"+"\n---------------------------------------------------------------------------------------------------------------------------------\n"+"\nMessage from "+name!.text!+" ( "+self.email!.text!+" ) \n"+"\n"+message!.text!
-            let plainText = Content(contentType: ContentType.plainText, value: body)
-            let email = Email(
-                personalizations: [personalization],
-                from: Address(email: "scott@graftel.com", name: "Graftel APP"),
-                replyTo: Address((self.email?.text)!),
-                content: [plainText],
-                subject: "[Graftel APP] Your message has been sent to Graftel"
-            )
-            do {
-                //try SendGrid.Session.sharedInstance.send(email)
-                try session.send(request: email)
-                yes=true
-            }
-            catch {
-                print(error)
-            }
+              var yes:Bool = false
+//            let session = SendGrid.Session()
+//            session.authentication = Authentication.apiKey(SendGridKey)
+//            let personalization = Personalization(to: [Address(stringLiteral: (self.email?.text)!)], bcc: [Address("scott@graftel.com"),Address("kangmin@graftel.com"),Address("esther@graftel.com"),Address("pdavis@graftel.com")])
+//            let body:String = "\nThis a confirmation that your quote request has been successfully sent to Graftel, we will respond to you within 24 hours.\n"+"\nThank you for contacting Graftel LLC. Below is the original message.\n"+"\n---------------------------------------------------------------------------------------------------------------------------------\n"+"\nMessage from "+name!.text!+" ( "+self.email!.text!+" ) \n"+"\n"+message!.text!
+//            let plainText = Content(contentType: ContentType.plainText, value: body)
+//            let email = Email(
+//                personalizations: [personalization],
+//                from: Address(email: "scott@graftel.com", name: "Graftel APP"),
+//                replyTo: Address((self.email?.text)!),
+//                content: [plainText],
+//                subject: "[Graftel APP] Your message has been sent to Graftel"
+//            )
+//            do {
+//                //try SendGrid.Session.sharedInstance.send(email)
+//                try session.send(request: email)
+//                yes=true
+//            }
+//            catch {
+//                print(error)
+//            }
             if(yes == true) {
                 let alert = UIAlertController(
                     title: "",

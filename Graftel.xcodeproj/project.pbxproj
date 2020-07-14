@@ -17,13 +17,6 @@
 		5D84BB231D9AC417006700CA /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D84BB221D9AC417006700CA /* SearchResults.swift */; };
 		5D84BB271D9D6229006700CA /* ReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D84BB261D9D6229006700CA /* ReportCell.swift */; };
 		5D8F79CE1DA3F4F200235EFB /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79CD1DA3F4F200235EFB /* Menu.swift */; };
-		5D8F79E61DA40B7E00235EFB /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79DF1DA40B7E00235EFB /* QRCodeReader.swift */; };
-		5D8F79E71DA40B7E00235EFB /* QRCodeReaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79E01DA40B7E00235EFB /* QRCodeReaderResult.swift */; };
-		5D8F79E81DA40B7E00235EFB /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79E11DA40B7E00235EFB /* QRCodeViewController.swift */; };
-		5D8F79E91DA40B7E00235EFB /* QRCodeViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79E21DA40B7E00235EFB /* QRCodeViewControllerBuilder.swift */; };
-		5D8F79EA1DA40B7E00235EFB /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79E31DA40B7E00235EFB /* ReaderOverlayView.swift */; };
-		5D8F79EB1DA40B7E00235EFB /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79E41DA40B7E00235EFB /* SwitchCameraButton.swift */; };
-		5D8F79EC1DA40B7E00235EFB /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79E51DA40B7E00235EFB /* ToggleTorchButton.swift */; };
 		5D8F79F11DA4298300235EFB /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79F01DA4298300235EFB /* PDFView.swift */; };
 		5D8F79F31DA4350200235EFB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F79F21DA4350200235EFB /* Constant.swift */; };
 		5D932B7B1D6F2F8D00944F1D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D932B7A1D6F2F8D00944F1D /* User.swift */; };
@@ -96,13 +89,6 @@
 		5D84BB221D9AC417006700CA /* SearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		5D84BB261D9D6229006700CA /* ReportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportCell.swift; sourceTree = "<group>"; };
 		5D8F79CD1DA3F4F200235EFB /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
-		5D8F79DF1DA40B7E00235EFB /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeReader.swift; path = "../../../Documents/iOS Files/QRCodeReader.swift-master/QRCodeReader/QRCodeReader.swift"; sourceTree = "<group>"; };
-		5D8F79E01DA40B7E00235EFB /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeReaderResult.swift; path = "../../../Documents/iOS Files/QRCodeReader.swift-master/QRCodeReader/QRCodeReaderResult.swift"; sourceTree = "<group>"; };
-		5D8F79E11DA40B7E00235EFB /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeViewController.swift; path = "../../../Documents/iOS Files/QRCodeReader.swift-master/QRCodeReader/QRCodeViewController.swift"; sourceTree = "<group>"; };
-		5D8F79E21DA40B7E00235EFB /* QRCodeViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeViewControllerBuilder.swift; path = "../../../Documents/iOS Files/QRCodeReader.swift-master/QRCodeReader/QRCodeViewControllerBuilder.swift"; sourceTree = "<group>"; };
-		5D8F79E31DA40B7E00235EFB /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReaderOverlayView.swift; path = "../../../Documents/iOS Files/QRCodeReader.swift-master/QRCodeReader/ReaderOverlayView.swift"; sourceTree = "<group>"; };
-		5D8F79E41DA40B7E00235EFB /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwitchCameraButton.swift; path = "../../../Documents/iOS Files/QRCodeReader.swift-master/QRCodeReader/SwitchCameraButton.swift"; sourceTree = "<group>"; };
-		5D8F79E51DA40B7E00235EFB /* ToggleTorchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToggleTorchButton.swift; path = "../../../Documents/iOS Files/QRCodeReader.swift-master/QRCodeReader/ToggleTorchButton.swift"; sourceTree = "<group>"; };
 		5D8F79F01DA4298300235EFB /* PDFView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
 		5D8F79F21DA4350200235EFB /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		5D932B7A1D6F2F8D00944F1D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -208,7 +194,6 @@
 			children = (
 				5D1DA9461D5A35E40085BEAA /* Graftel-Bridging-Header.h */,
 				5D2C9CC91DC8E65400556326 /* Reachability */,
-				5DC0F07E1D6790D600AB83C8 /* QRCodeReader */,
 				5DA64BB21D5A2BE9009D81C5 /* DLRadioButton */,
 				5DA64BAD1D5A2BB4009D81C5 /* SWRevealViewController */,
 				5D932B7A1D6F2F8D00944F1D /* User.swift */,
@@ -282,21 +267,6 @@
 			path = "../../../Downloads/DLRadioButton-master 2/DLRadioButton";
 			sourceTree = "<group>";
 		};
-		5DC0F07E1D6790D600AB83C8 /* QRCodeReader */ = {
-			isa = PBXGroup;
-			children = (
-				5D8F79DF1DA40B7E00235EFB /* QRCodeReader.swift */,
-				5D8F79E01DA40B7E00235EFB /* QRCodeReaderResult.swift */,
-				5D8F79E11DA40B7E00235EFB /* QRCodeViewController.swift */,
-				5D8F79E21DA40B7E00235EFB /* QRCodeViewControllerBuilder.swift */,
-				5D8F79E31DA40B7E00235EFB /* ReaderOverlayView.swift */,
-				5D8F79E41DA40B7E00235EFB /* SwitchCameraButton.swift */,
-				5D8F79E51DA40B7E00235EFB /* ToggleTorchButton.swift */,
-			);
-			name = QRCodeReader;
-			path = "../../../Downloads/QRCodeReader.swift-master/QRCodeReader";
-			sourceTree = "<group>";
-		};
 		6899A24FA5A084E97D2615C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,7 +302,6 @@
 				5DA64B761D5A28C8009D81C5 /* Frameworks */,
 				5DA64B771D5A28C8009D81C5 /* Resources */,
 				ECB548594B1E3D5E1383CEA1 /* [CP] Embed Pods Frameworks */,
-				48FF2645B6A4BDC4D1B10A5E /* [CP] Copy Pods Resources */,
 				5D0B3EF01DBFCA7500AA50EF /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -352,8 +321,6 @@
 				5DA64B8C1D5A28C9009D81C5 /* Sources */,
 				5DA64B8D1D5A28C9009D81C5 /* Frameworks */,
 				5DA64B8E1D5A28C9009D81C5 /* Resources */,
-				B92D3B07CF15F1EDD94ADB2D /* [CP] Embed Pods Frameworks */,
-				920F225B2A83CFFC0FC9CDD6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -373,7 +340,6 @@
 				5DA64B971D5A28C9009D81C5 /* Sources */,
 				5DA64B981D5A28C9009D81C5 /* Frameworks */,
 				5DA64B991D5A28C9009D81C5 /* Resources */,
-				C899441BCE226020064F683E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -392,7 +358,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Graftel;
 				TargetAttributes = {
 					5DA64B781D5A28C8009D81C5 = {
@@ -416,7 +382,7 @@
 			};
 			buildConfigurationList = 5DA64B741D5A28C8009D81C5 /* Build configuration list for PBXProject "Graftel" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -468,13 +434,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GraftelTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		0910FCDEAAED2A66AC712193 /* [CP] Check Pods Manifest.lock */ = {
@@ -483,43 +452,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GraftelUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		48FF2645B6A4BDC4D1B10A5E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Graftel/Pods-Graftel-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		920F225B2A83CFFC0FC9CDD6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GraftelTests/Pods-GraftelTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9F3F9E3314B01F7A1088D8CD /* [CP] Check Pods Manifest.lock */ = {
@@ -528,43 +470,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Graftel-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B92D3B07CF15F1EDD94ADB2D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GraftelTests/Pods-GraftelTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C899441BCE226020064F683E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GraftelUITests/Pods-GraftelUITests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ECB548594B1E3D5E1383CEA1 /* [CP] Embed Pods Frameworks */ = {
@@ -573,13 +488,24 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Graftel/Pods-Graftel-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SendGrid/SendGrid.framework",
+				"${BUILT_PRODUCTS_DIR}/Zip/Zip.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SendGrid.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zip.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Graftel/Pods-Graftel-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Graftel/Pods-Graftel-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -590,16 +516,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D1DA05C1DD11CF800F40A3E /* Password.swift in Sources */,
-				5D8F79E91DA40B7E00235EFB /* QRCodeViewControllerBuilder.swift in Sources */,
 				5DA64BCC1D5A2C3D009D81C5 /* QuoteDetailCell.swift in Sources */,
 				5DA64BC41D5A2C3D009D81C5 /* DeviceInfo.swift in Sources */,
 				5DA64BC91D5A2C3D009D81C5 /* OrdersCell.swift in Sources */,
 				5D8F79F31DA4350200235EFB /* Constant.swift in Sources */,
-				5D8F79EC1DA40B7E00235EFB /* ToggleTorchButton.swift in Sources */,
-				5D8F79EA1DA40B7E00235EFB /* ReaderOverlayView.swift in Sources */,
 				5DA64BCA1D5A2C3D009D81C5 /* Profile.swift in Sources */,
 				5D8F79F11DA4298300235EFB /* PDFView.swift in Sources */,
-				5D8F79EB1DA40B7E00235EFB /* SwitchCameraButton.swift in Sources */,
 				5DA64BC81D5A2C3D009D81C5 /* Orders.swift in Sources */,
 				5D932B7B1D6F2F8D00944F1D /* User.swift in Sources */,
 				5DA64B7F1D5A28C9009D81C5 /* Login.swift in Sources */,
@@ -609,7 +531,6 @@
 				5DA64BC31D5A2C3D009D81C5 /* ContactUs.swift in Sources */,
 				5D932B7D1D70C32600944F1D /* Search.swift in Sources */,
 				5DA64B7D1D5A28C9009D81C5 /* AppDelegate.swift in Sources */,
-				5D8F79E71DA40B7E00235EFB /* QRCodeReaderResult.swift in Sources */,
 				5DC0F0731D62167F00AB83C8 /* SWRevealViewController.m in Sources */,
 				5D363E6D1D833ED60094E4DF /* QuoteRequest.swift in Sources */,
 				5DC0F0761D62169C00AB83C8 /* DLRadioButton.m in Sources */,
@@ -620,8 +541,6 @@
 				5D84BB271D9D6229006700CA /* ReportCell.swift in Sources */,
 				5D8F79CE1DA3F4F200235EFB /* Menu.swift in Sources */,
 				5DA64B851D5A28C9009D81C5 /* Graftel.xcdatamodeld in Sources */,
-				5D8F79E81DA40B7E00235EFB /* QRCodeViewController.swift in Sources */,
-				5D8F79E61DA40B7E00235EFB /* QRCodeReader.swift in Sources */,
 				5D2C9CCC1DC8E65400556326 /* Reachability.m in Sources */,
 				5D727CEE1D7A090300AED5AB /* ForgotPassword.swift in Sources */,
 			);
@@ -682,19 +601,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -734,19 +662,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -780,7 +717,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 847A30298ED37ABA5284F22E /* Pods-Graftel.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -790,7 +728,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "./Graftel/Graftel-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -798,7 +736,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B73F8510279E4BB444DE5316 /* Pods-Graftel.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -808,7 +747,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "./Graftel/Graftel-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -821,7 +760,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.graftel.www.GraftelTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graftel.app/Graftel";
 			};
 			name = Debug;
@@ -835,7 +774,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.graftel.www.GraftelTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graftel.app/Graftel";
 			};
 			name = Release;
@@ -848,7 +787,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.graftel.www.GraftelUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = Graftel;
 			};
 			name = Debug;
@@ -861,7 +800,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.graftel.www.GraftelUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = Graftel;
 			};
 			name = Release;

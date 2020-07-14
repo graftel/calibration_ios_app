@@ -33,8 +33,8 @@ class Search:UIViewController {
         dateformat.dateFormat = "MM-dd-yyyy"
         if(PO?.text?.isEmpty==true && Serial?.text?.isEmpty==true && MTE?.text?.isEmpty==true) {
             if(dateformat.string(from:self.from.date) == dateformat.string(from:self.to.date)) {
-                let alert = UIAlertController(title: "Error", message: "Please enter atleast one Search Criteria!", preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "Try Again!", style: UIAlertActionStyle.default, handler: nil))
+                let alert = UIAlertController(title: "Error", message: "Please enter atleast one Search Criteria!", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "Try Again!", style: UIAlertAction.Style.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
             else {

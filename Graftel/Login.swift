@@ -48,7 +48,7 @@ class Login: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    let alert = UIAlertController(title:nil, message: "Loading.. Please wait", preferredStyle: UIAlertControllerStyle.alert)
+    let alert = UIAlertController(title:nil, message: "Loading.. Please wait", preferredStyle: UIAlertController.Style.alert)
 
     //MARK:Actions
     @IBAction func signin(_ sender: AnyObject) {
@@ -121,8 +121,8 @@ class Login: UIViewController {
                                 }
                                 else {
                                     DispatchQueue.main.async {
-                                        let alert = UIAlertController(title: "Failure", message: "Username not found!", preferredStyle: UIAlertControllerStyle.alert)
-                                        alert.addAction(UIAlertAction(title: "Try Again!", style: UIAlertActionStyle.default, handler: nil))
+                                        let alert = UIAlertController(title: "Failure", message: "Username not found!", preferredStyle: UIAlertController.Style.alert)
+                                        alert.addAction(UIAlertAction(title: "Try Again!", style: UIAlertAction.Style.default, handler: nil))
                                         self.present(alert, animated: true, completion: nil)
                                     }
                                 }
@@ -139,8 +139,8 @@ class Login: UIViewController {
                     task.resume()
                 }
                 else {
-                    let alert = UIAlertController(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", preferredStyle: UIAlertControllerStyle.alert)
-                    alert.addAction(UIAlertAction(title: "OK!", style: UIAlertActionStyle.default, handler: nil))
+                    let alert = UIAlertController(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "OK!", style: UIAlertAction.Style.default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 }
                 
@@ -166,8 +166,8 @@ class Login: UIViewController {
                 }
                 else
                 {
-                    let alert = UIAlertController(title: "Failure", message: "Wrong Username/Password!", preferredStyle: UIAlertControllerStyle.alert)
-                    alert.addAction(UIAlertAction(title: "Try Again!", style: UIAlertActionStyle.default, handler: nil))
+                    let alert = UIAlertController(title: "Failure", message: "Wrong Username/Password!", preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "Try Again!", style: UIAlertAction.Style.default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 }
                 }
@@ -175,8 +175,8 @@ class Login: UIViewController {
         else {
             self.activityIndicatorView.isHidden = true
             self.activityIndicatorView.stopAnimating()
-            let alert = UIAlertController(title: "", message: "Enter Username/Password!", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "Try Again!", style: UIAlertActionStyle.default, handler: nil))
+            let alert = UIAlertController(title: "", message: "Enter Username/Password!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Try Again!", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
     }
@@ -208,13 +208,13 @@ class Login: UIViewController {
     
     func wait()
     {
-        RunLoop.current.run(mode: RunLoopMode.defaultRunLoopMode, before: Date(timeIntervalSinceNow: 1))
+        RunLoop.current.run(mode: RunLoop.Mode.default, before: Date(timeIntervalSinceNow: 1))
     }
     
     func showDialog() {
         let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 15, y: 12, width: 37, height: 37))
         loadingIndicator.hidesWhenStopped = true
-        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        loadingIndicator.style = UIActivityIndicatorView.Style.gray
         loadingIndicator.startAnimating();
         alert.view.addSubview(loadingIndicator)
         self.present(alert, animated: true, completion: nil)

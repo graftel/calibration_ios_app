@@ -49,8 +49,8 @@ class QuoteRequest:UIViewController, AVAudioRecorderDelegate {
         else {
             recordButton.isHidden = true
         }
-        text.addTarget(self, action: #selector(QuoteRequest.logSelectedButton), for: UIControlEvents.touchUpInside);
-        voice.addTarget(self, action: #selector(QuoteRequest.logSelectedButton), for: UIControlEvents.touchUpInside);
+        text.addTarget(self, action: #selector(QuoteRequest.logSelectedButton), for: UIControl.Event.touchUpInside);
+        voice.addTarget(self, action: #selector(QuoteRequest.logSelectedButton), for: UIControl.Event.touchUpInside);
         
         mRecordMode = MODE_RECORD_STOP;
         mPlayMode = MODE_PLAY_STOP;
@@ -67,7 +67,7 @@ class QuoteRequest:UIViewController, AVAudioRecorderDelegate {
         }
     }
     
-    func logSelectedButton(_ radioButton : DLRadioButton) {
+    @objc func logSelectedButton(_ radioButton : DLRadioButton) {
         if ((radioButton.selected())?.titleLabel!.text == "Text Message") {
             recordButton.isHidden=true
             textView.isHidden=false
@@ -108,7 +108,7 @@ class QuoteRequest:UIViewController, AVAudioRecorderDelegate {
         }
     }
     
-    func updateCounter() {
+    @objc func updateCounter() {
         counter = counter - 1
         countdown.text = "Time Remaining: \(counter)"
         //countdown.text = String(counter--)
@@ -132,10 +132,10 @@ class QuoteRequest:UIViewController, AVAudioRecorderDelegate {
         counter = 59
         countdown.text = "Time Remaining: \(counter)"
         playButton.isHidden = true
-        self.recordButton.setBackgroundImage(UIImage(named:"stop.png"),for:UIControlState())
+        self.recordButton.setBackgroundImage(UIImage(named:"stop.png"),for:UIControl.State())
         recordingSession = AVAudioSession.sharedInstance()
         do {
-            try recordingSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
+            try recordingSession.setCategory(AVAudioSession.Category.playAndRecord)
             try recordingSession.setActive(true)
             recordingSession.requestRecordPermission() { (allowed: Bool) -> Void in
                 DispatchQueue.main.async {
@@ -170,7 +170,7 @@ class QuoteRequest:UIViewController, AVAudioRecorderDelegate {
     }
     
     func finishRecording(success: Bool) {
-        self.recordButton.setBackgroundImage(UIImage(named:"record1.png"),for:UIControlState())
+        self.recordButton.setBackgroundImage(UIImage(named:"record1.png"),for:UIControl.State())
         timer.invalidate()
         counter = 0
         audioRecorder.stop()
@@ -186,7 +186,7 @@ class QuoteRequest:UIViewController, AVAudioRecorderDelegate {
             do {
                 //if FileManager.default.fileExists(atPath: String(describing: audioFilename)) {
                     //print("Zipping")
-                    dest = try Zip.quickZipFiles([audioFilename], fileName: "audio") as NSURL! // Zip
+                dest = try Zip.quickZipFiles([audioFilename], fileName: "audio") as NSURL? // Zip
                 //}
             }
             catch {
@@ -208,18 +208,18 @@ class QuoteRequest:UIViewController, AVAudioRecorderDelegate {
                 if mPlayMode == MODE_PLAY_START
                 {
                     mPlayMode = MODE_PLAY_STOP
-                    self.playButton.setBackgroundImage(UIImage(named:"play.png"),for:UIControlState())
+                    self.playButton.setBackgroundImage(UIImage(named:"play.png"),for:UIControl.State())
                     audioPlayer.stop()
                 }
                 else
                 {
                     mPlayMode = MODE_PLAY_START
-                    self.playButton.setBackgroundImage(UIImage(named:"pause.png"),for:UIControlState())
+                    self.playButton.setBackgroundImage(UIImage(named:"pause.png"),for:UIControl.State())
                     audioPlayer.play()
                     let time = DispatchTime.now() + Double(Int64(audioPlayer.duration * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
                     DispatchQueue.main.asyncAfter(deadline: time, execute: {
                         self.audioPlayer.stop()
-                        self.playButton.setBackgroundImage(UIImage(named:"play.png"),for:UIControlState())
+                        self.playButton.setBackgroundImage(UIImage(named:"play.png"),for:UIControl.State())
                     })
                     
                 }
@@ -243,61 +243,61 @@ class QuoteRequest:UIViewController, AVAudioRecorderDelegate {
             var yes:Bool = false
             let session = SendGrid.Session()
             session.authentication = Authentication.apiKey(SendGridKey)
-            let personalization = Personalization(to: [Address(User.loginEmail)], bcc: [Address("scott@graftel.com"),Address("kangmin@graftel.com"),Address("esther@graftel.com"),Address("pdavis@graftel.com")])
+            let personalization = Personalization(to: [Address(stringLiteral: User.loginEmail)], bcc: [Address("scott@graftel.com"),Address("kangmin@graftel.com"),Address("esther@graftel.com"),Address("pdavis@graftel.com")])
             if text.isSelected == true {
                 if textView?.text.isEmpty != true {
-                    body = body + "\n" + textView!.text!
-                    let plainText = Content(contentType: ContentType.plainText, value: body)
-                    let email = Email(
-                        personalizations: [personalization],
-                        from: Address(email: "scott@graftel.com", name: "Graftel APP"),
-                        replyTo: Address(User.loginEmail),
-                        content: [plainText],
-                        subject: "[Graftel APP] Your quote request has been sent to Graftel"
-                    )
-                    do {
-                        try session.send(request: email)
-                        yes=true
-                    }
-                    catch {
-                        print(error)
-                    }
+//                    body = body + "\n" + textView!.text!
+//                    let plainText = Content(contentType: ContentType.plainText, value: body)
+//                    let email = Email(
+//                        personalizations: [personalization],
+//                        from: Address(email: "scott@graftel.com", name: "Graftel APP"),
+//                        replyTo: Address(stringLiteral: User.loginEmail),
+//                        content: [plainText],
+//                        subject: "[Graftel APP] Your quote request has been sent to Graftel"
+//                    )
+//                    do {
+//                        try session.send(request: email)
+//                        yes=true
+//                    }
+//                    catch {
+//                        print(error)
+//                    }
                 }
                 else {
-                    let alert = UIAlertController(title: "Error", message: "Please enter required fields!", preferredStyle: UIAlertControllerStyle.alert)
-                    alert.addAction(UIAlertAction(title: "OK!", style: UIAlertActionStyle.default, handler: nil))
+                    let alert = UIAlertController(title: "Error", message: "Please enter required fields!", preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "OK!", style: UIAlertAction.Style.default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 }
             }
             else {
                 if(audioRecorder != nil) {
-                    let plainText = Content(contentType: ContentType.plainText, value: "Audio Message in Attachment")
-                    let email = Email(
-                        personalizations: [personalization],
-                        from: Address(email: "scott@graftel.com", name: "Graftel APP"),
-                        replyTo: Address(User.loginEmail),
-                        content: [plainText],
-                        subject: "[Graftel APP] Your quote request has been sent to Graftel"
-                    )
-                    do {
-                        let attachment = Attachment(
-                            filename: "audio.zip",
-                            content: try Data(contentsOf: dest as URL),
-                            disposition: .attachment,
-                            type: .zip,
-                            contentID: nil
-                        )
-                        email.attachments = [attachment]
-                        try session.send(request: email)
-                        yes=true
-                    }
-                    catch {
-                        print(error)
-                    }
+//                    let plainText = Content(contentType: ContentType.plainText, value: "Audio Message in Attachment")
+//                    let email = Email(
+//                        personalizations: [personalization],
+//                        from: Address(email: "scott@graftel.com", name: "Graftel APP"),
+//                        replyTo: Address(stringLiteral: User.loginEmail),
+//                        content: [plainText],
+//                        subject: "[Graftel APP] Your quote request has been sent to Graftel"
+//                    )
+//                    do {
+//                        let attachment = Attachment(
+//                            filename: "audio.zip",
+//                            content: try Data(contentsOf: dest as URL),
+//                            disposition: .attachment,
+//                            type: .zip,
+//                            contentID: nil
+//                        )
+//                        email.attachments = [attachment]
+//                        try session.send(request: email)
+//                        yes=true
+//                    }
+//                    catch {
+//                        print(error)
+//                    }
                 }
                 else {
-                    let alert = UIAlertController(title: "Error", message: "Please record a Quote!", preferredStyle: UIAlertControllerStyle.alert)
-                    alert.addAction(UIAlertAction(title: "OK!", style: UIAlertActionStyle.default, handler: nil))
+                    let alert = UIAlertController(title: "Error", message: "Please record a Quote!", preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "OK!", style: UIAlertAction.Style.default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 }
             }

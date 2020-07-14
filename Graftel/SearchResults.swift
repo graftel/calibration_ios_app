@@ -21,12 +21,12 @@ class SearchResults: UITableViewController {
         super.viewDidLoad()
     }
     
-    let alert = UIAlertController(title:nil, message: "Loading.. Please wait", preferredStyle: UIAlertControllerStyle.alert)
+    let alert = UIAlertController(title:nil, message: "Loading.. Please wait", preferredStyle: UIAlertController.Style.alert)
     
     func showDialog() {
         let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 15, y: 12, width: 37, height: 37))
         loadingIndicator.hidesWhenStopped = true
-        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        loadingIndicator.style = UIActivityIndicatorView.Style.gray
         loadingIndicator.startAnimating();
         alert.view.addSubview(loadingIndicator)
         self.present(alert, animated: true, completion: nil)
@@ -100,8 +100,8 @@ class SearchResults: UITableViewController {
                             }
                         }
                         if success == -1 {
-                            let alert = UIAlertController(title: "", message: "Email Address already Exist!", preferredStyle: UIAlertControllerStyle.alert)
-                            alert.addAction(UIAlertAction(title: "OK!", style: UIAlertActionStyle.default, handler: nil))
+                            let alert = UIAlertController(title: "", message: "Email Address already Exist!", preferredStyle: UIAlertController.Style.alert)
+                            alert.addAction(UIAlertAction(title: "OK!", style: UIAlertAction.Style.default, handler: nil))
                             self.present(alert, animated: true, completion: nil)
                         }
                     }
@@ -114,8 +114,8 @@ class SearchResults: UITableViewController {
                 task.resume()
             }
             else {
-                let alert = UIAlertController(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "OK!", style: UIAlertActionStyle.default, handler: nil))
+                let alert = UIAlertController(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "OK!", style: UIAlertAction.Style.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
         }
@@ -130,7 +130,7 @@ class SearchResults: UITableViewController {
     
     func wait()
     {
-        RunLoop.current.run(mode: RunLoopMode.defaultRunLoopMode, before: Date(timeIntervalSinceNow: 1))
+        RunLoop.current.run(mode: RunLoop.Mode.default, before: Date(timeIntervalSinceNow: 1))
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

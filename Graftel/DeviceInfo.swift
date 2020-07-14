@@ -6,7 +6,7 @@
 //  Copyright © 2016 Graftel. All rights reserved.
 //
 
-import UIKit
+import UIKit	
 import SendGrid
 
 class DeviceInfo: UITableViewController {
@@ -19,17 +19,17 @@ class DeviceInfo: UITableViewController {
         super.viewDidLoad()
         let myUIViewController = self.navigationController!.viewControllers[(self.navigationController!.viewControllers.count)-2] as UIViewController
         if(myUIViewController.title! != "Quote Detail" && myUIViewController.title! != "Search Results") {
-            let requoteAll = UIBarButtonItem(title: "Requote All", style: UIBarButtonItemStyle.plain, target: self, action: #selector(DeviceInfo.requoteAll(_:)))
+            let requoteAll = UIBarButtonItem(title: "Requote All", style: UIBarButtonItem.Style.plain, target: self, action: #selector(DeviceInfo.requoteAll(_:)))
             self.navigationItem.rightBarButtonItem = requoteAll
         }
     }
     
-    let alert = UIAlertController(title:nil, message: "Loading.. Please wait", preferredStyle: UIAlertControllerStyle.alert)
+    let alert = UIAlertController(title:nil, message: "Loading.. Please wait", preferredStyle: UIAlertController.Style.alert)
     
     func showDialog() {
         let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 15, y: 12, width: 37, height: 37))
         loadingIndicator.hidesWhenStopped = true
-        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        loadingIndicator.style = UIActivityIndicatorView.Style.gray
         loadingIndicator.startAnimating();
         alert.view.addSubview(loadingIndicator)
         self.present(alert, animated: true, completion: nil)
@@ -100,8 +100,8 @@ class DeviceInfo: UITableViewController {
                 task.resume()
             }
             else {
-                let alert = UIAlertController(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "OK!", style: UIAlertActionStyle.default, handler: nil))
+                let alert = UIAlertController(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "OK!", style: UIAlertAction.Style.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
             DispatchQueue.main.async {
@@ -116,7 +116,7 @@ class DeviceInfo: UITableViewController {
     
     func wait()
     {
-        RunLoop.current.run(mode: RunLoopMode.defaultRunLoopMode, before: Date(timeIntervalSinceNow: 1))
+        RunLoop.current.run(mode: RunLoop.Mode.default, before: Date(timeIntervalSinceNow: 1))
     }
     
     @IBAction func request(_ sender: AnyObject) {
@@ -131,29 +131,29 @@ class DeviceInfo: UITableViewController {
                 message: "Do you request a Re-quote?",
                 preferredStyle: .alert
             )
-            alert.addAction(UIAlertAction(title: "Yes", style: .default) {UIAlertAction in
-                let session = SendGrid.Session()
-                session.authentication = Authentication.apiKey(SendGridKey)
-                let personalization = Personalization(to: [Address(User.loginEmail)], bcc: [Address("scott@graftel.com"),Address("kangmin@graftel.com"),Address("esther@graftel.com"),Address("pdavis@graftel.com")])
-                let body:String = "\nThis a confirmation that your quote request has been successfully sent to Graftel, we will respond to you within 24 hours.\n"+"\nThank you for contacting Graftel LLC. Below is the original message.\n"+"\n---------------------------------------------------------------------------------------------------------------------------------\n"+"\nQuote request from "+User.contactPersonName+" ( "+User.loginEmail+" ) \n"+"\nCustomer is requesting a quote for calibration ID: "+self.toPass
-                let plainText = Content(contentType: ContentType.plainText, value: body)
-                //let htmlText = Content(contentType: ContentType.HTMLText, value: "<h1>Hello World</h1>")
-                let email = Email(
-                    personalizations: [personalization],
-                    from: Address(email: "scott@graftel.com", name: "Graftel APP"),
-                    replyTo: Address(User.loginEmail),
-                    content: [plainText],
-                    subject: "[Graftel APP] Your quote request has been sent to Graftel"
-                )
-                do {
-                    //try SendGrid.Session.sharedInstance.send(email)
-                    try session.send(request: email)
-                    yes=true
-                }
-                catch {
-                    print(error)
-                }
-            })
+//            alert.addAction(UIAlertAction(title: "Yes", style: .default) {UIAlertAction in
+//                let session = SendGrid.Session()
+//                session.authentication = Authentication.apiKey(SendGridKey)
+//                let personalization = Personalization(to: [Address(stringLiteral: User.loginEmail)], bcc: [Address("scott@graftel.com"),Address("kangmin@graftel.com"),Address("esther@graftel.com"),Address("pdavis@graftel.com")])
+//                let body:String = "\nThis a confirmation that your quote request has been successfully sent to Graftel, we will respond to you within 24 hours.\n"+"\nThank you for contacting Graftel LLC. Below is the original message.\n"+"\n---------------------------------------------------------------------------------------------------------------------------------\n"+"\nQuote request from "+User.contactPersonName+" ( "+User.loginEmail+" ) \n"+"\nCustomer is requesting a quote for calibration ID: "+self.toPass
+//                let plainText = Content(contentType: ContentType.plainText, value: body)
+//                //let htmlText = Content(contentType: ContentType.HTMLText, value: "<h1>Hello World</h1>")
+//                let email = Email(
+//                    personalizations: [personalization],
+//                    from: Address(email: "scott@graftel.com", name: "Graftel APP"),
+//                    replyTo: Address(stringLiteral: User.loginEmail),
+//                    content: [plainText],
+//                    subject: "[Graftel APP] Your quote request has been sent to Graftel"
+//                )
+//                do {
+//                    //try SendGrid.Session.sharedInstance.send(email)
+//                    try session.send(request: email)
+//                    yes=true
+//                }
+//                catch {
+//                    print(error)
+//                }
+//            })
             alert.addAction(UIAlertAction(title: "No", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             if(yes == true) {
@@ -188,7 +188,7 @@ class DeviceInfo: UITableViewController {
     
     var body:String = ""
     
-    func requoteAll(_ sender: UIBarButtonItem) {
+    @objc func requoteAll(_ sender: UIBarButtonItem) {
         let oldReqouteAllTimestamp = defaults.object(forKey: "oldReqouteAllTimestamp") as? Double ?? 0.0
         if (NSDate().timeIntervalSince1970 - oldReqouteAllTimestamp) >= (24*60*60) {
             defaults.set(NSDate().timeIntervalSince1970, forKey: "oldReqouteAllTimestamp")
@@ -199,27 +199,27 @@ class DeviceInfo: UITableViewController {
                 message: "Do you want a Re-quote for all Calibration IDs?",
                 preferredStyle: .alert
             )
-            alert.addAction(UIAlertAction(title: "Yes", style: .default) {UIAlertAction in
-                let session = SendGrid.Session()
-                session.authentication = Authentication.apiKey(SendGridKey)
-                let personalization = Personalization(to: [Address(User.loginEmail)], bcc: [Address("scott@graftel.com"),Address("kangmin@graftel.com"),Address("esther@graftel.com"),Address("pdavis@graftel.com")])
-                let body:String = "\nThis a confirmation that your quote request has been successfully sent to Graftel, we will respond to you within 24 hours.\n"+"\nThank you for contacting Graftel LLC. Below is the original message.\n"+"\n---------------------------------------------------------------------------------------------------------------------------------\n"+"\nQuote request from "+User.contactPersonName+" ( "+User.loginEmail+" ) \n"+"\nCustomer is requesting a quote for calibration ID: "+self.toPass
-                let plainText = Content(contentType: ContentType.plainText, value: body)
-                let email = Email(
-                    personalizations: [personalization],
-                    from: Address(email: "scott@graftel.com", name: "Graftel APP"),
-                    replyTo: Address(User.loginEmail),
-                    content: [plainText],
-                    subject: "[Graftel APP] Your quote request has been sent to Graftel"
-                )
-                do {
-                    try session.send(request: email)
-                    yes = true
-                }
-                catch {
-                    print(error)
-                }
-            })
+//            alert.addAction(UIAlertAction(title: "Yes", style: .default) {UIAlertAction in
+//                let session = SendGrid.Session()
+//                session.authentication = Authentication.apiKey(SendGridKey)
+//                let personalization = Personalization(to: [Address(stringLiteral: User.loginEmail)], bcc: [Address("scott@graftel.com"),Address("kangmin@graftel.com"),Address("esther@graftel.com"),Address("pdavis@graftel.com")])
+//                let body:String = "\nThis a confirmation that your quote request has been successfully sent to Graftel, we will respond to you within 24 hours.\n"+"\nThank you for contacting Graftel LLC. Below is the original message.\n"+"\n---------------------------------------------------------------------------------------------------------------------------------\n"+"\nQuote request from "+User.contactPersonName+" ( "+User.loginEmail+" ) \n"+"\nCustomer is requesting a quote for calibration ID: "+self.toPass
+//                let plainText = Content(contentType: ContentType.plainText, value: body)
+//                let email = Email(
+//                    personalizations: [personalization],
+//                    from: Address(email: "scott@graftel.com", name: "Graftel APP"),
+//                    replyTo: Address(stringLiteral: User.loginEmail),
+//                    content: [plainText],
+//                    subject: "[Graftel APP] Your quote request has been sent to Graftel"
+//                )
+//                do {
+//                    try session.send(request: email)
+//                    yes = true
+//                }
+//                catch {
+//                    print(error)
+//                }
+//            })
             alert.addAction(UIAlertAction(title: "No", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             if(yes == true) {
@@ -272,12 +272,12 @@ class DeviceInfo: UITableViewController {
         cell.mte?.text = arr[1]
         cell.po?.text = arr[2]
         cell.status?.text = arr[3]
-        cell.pdf?.addTarget(self, action: #selector(DeviceInfo.View_Report(_:)), for: UIControlEvents.touchUpInside)
+        cell.pdf?.addTarget(self, action: #selector(DeviceInfo.View_Report(_:)), for: UIControl.Event.touchUpInside)
         cell.pdf?.tag =  indexPath.row
         return cell
     }
     
-    func View_Report(_ sender: UIButton) {
+    @objc func View_Report(_ sender: UIButton) {
         let pdfviewer = self.storyboard!.instantiateViewController(withIdentifier: "PDF View") as! PDFView
         print(self.TableData[sender.tag][4])
         if self.TableData[sender.tag][4] != "None" {
@@ -290,8 +290,8 @@ class DeviceInfo: UITableViewController {
             self.navigationController?.pushViewController(pdfviewer, animated: true)
         }
         else {
-            let alert = UIAlertController(title: "Sorry!", message: "The file you are looking is not Available.", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK!", style: UIAlertActionStyle.default, handler: nil))
+            let alert = UIAlertController(title: "Sorry!", message: "The file you are looking is not Available.", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK!", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
     }

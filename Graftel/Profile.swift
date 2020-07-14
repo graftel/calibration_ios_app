@@ -131,11 +131,11 @@ class Profile : UIViewController {
         }
     }
     
-    let alert = UIAlertController(title:nil, message: "Loading.. Please wait", preferredStyle: UIAlertControllerStyle.alert)
+    let alert = UIAlertController(title:nil, message: "Loading.. Please wait", preferredStyle: UIAlertController.Style.alert)
     func showDialog() {
         let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 15, y: 12, width: 37, height: 37))
         loadingIndicator.hidesWhenStopped = true
-        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        loadingIndicator.style = UIActivityIndicatorView.Style.gray
         loadingIndicator.startAnimating();
         alert.view.addSubview(loadingIndicator)
         self.present(alert, animated: true, completion: nil)
@@ -177,15 +177,15 @@ class Profile : UIViewController {
                         }
                         if success == -1 {
                             DispatchQueue.main.async {
-                                let alert = UIAlertController(title: "", message: "Email Address already Exist!", preferredStyle: UIAlertControllerStyle.alert)
-                                alert.addAction(UIAlertAction(title: "Try Again!", style: UIAlertActionStyle.default, handler: nil))
+                                let alert = UIAlertController(title: "", message: "Email Address already Exist!", preferredStyle: UIAlertController.Style.alert)
+                                alert.addAction(UIAlertAction(title: "Try Again!", style: UIAlertAction.Style.default, handler: nil))
                                 self.present(alert, animated: true, completion: nil)
                             }
                         }
                         if success == 0 {
                             DispatchQueue.main.async {
-                                let alert = UIAlertController(title: "", message: "Email Address doesn't Exist!", preferredStyle: UIAlertControllerStyle.alert)
-                                alert.addAction(UIAlertAction(title: "Try Again!", style: UIAlertActionStyle.default, handler: nil))
+                                let alert = UIAlertController(title: "", message: "Email Address doesn't Exist!", preferredStyle: UIAlertController.Style.alert)
+                                alert.addAction(UIAlertAction(title: "Try Again!", style: UIAlertAction.Style.default, handler: nil))
                                 self.present(alert, animated: true, completion: nil)
                             }
                         }
@@ -199,8 +199,8 @@ class Profile : UIViewController {
                   task.resume()
             }
             else {
-                let alert = UIAlertController(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", preferredStyle: UIAlertControllerStyle.alert)
-                  alert.addAction(UIAlertAction(title: "OK!", style: UIAlertActionStyle.default, handler: nil))
+                let alert = UIAlertController(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "OK!", style: UIAlertAction.Style.default, handler: nil))
                   self.present(alert, animated: true, completion: nil)
             }
         }
@@ -212,29 +212,29 @@ class Profile : UIViewController {
             if flag == true {
                 if User.isTempUser != 0 {
                     if isConnected() == true {
-                        let session = SendGrid.Session()
-                        session.authentication = Authentication.apiKey(SendGridKey)
-                        let personalization = Personalization(to: [Address(self.loginEmail!.text!)], bcc: [Address("scott@graftel.com"),Address("kangmin@graftel.com"),Address("esther@graftel.com"),Address("pdavis@graftel.com")])
-                        let body:String = "\nUID: \(User.UID) \n"+"\n Login Email: \(self.loginEmail!.text!) \n"+"\n Company: \(self.companyName!.text!) \n"+"\n Contact Person Name: \(self.contactPersonNam!.text!) \n"+"\n Phone: \(self.phone!.text!) \n"
-                        let plainText = Content(contentType: ContentType.plainText, value: body)
-                        //let htmlText = Content(contentType: ContentType.HTMLText, value: "<h1>Hello World</h1>")
-                        let email = Email(
-                            personalizations: [personalization],
-                            from: Address(email: "scott@graftel.com", name: "Graftel APP"),
-                            replyTo: Address(self.loginEmail!.text!),
-                            content: [plainText],
-                            subject: "[Graftel APP] New Customer Creation Notification"
-                        )
-                        do {
-                            try session.send(request: email)
-                        }
-                        catch {
-                            print(error)
-                        }
+//                        let session = SendGrid.Session()
+//                        session.authentication = Authentication.apiKey(SendGridKey)
+//                        let personalization = Personalization(to: [Address(stringLiteral: self.loginEmail!.text!)], bcc: [Address("scott@graftel.com"),Address("kangmin@graftel.com"),Address("esther@graftel.com"),Address("pdavis@graftel.com")])
+//                        let body:String = "\nUID: \(User.UID) \n"+"\n Login Email: \(self.loginEmail!.text!) \n"+"\n Company: \(self.companyName!.text!) \n"+"\n Contact Person Name: \(self.contactPersonNam!.text!) \n"+"\n Phone: \(self.phone!.text!) \n"
+//                        let plainText = Content(contentType: ContentType.plainText, value: body)
+//                        //let htmlText = Content(contentType: ContentType.HTMLText, value: "<h1>Hello World</h1>")
+//                        let email = Email(
+//                            personalizations: [personalization],
+//                            from: Address(email: "scott@graftel.com", name: "Graftel APP"),
+//                            replyTo: Address(stringLiteral: self.loginEmail!.text!),
+//                            content: [plainText],
+//                            subject: "[Graftel APP] New Customer Creation Notification"
+//                        )
+//                        do {
+//                            try session.send(request: email)
+//                        }
+//                        catch {
+//                            print(error)
+//                        }
                     }
                     else {
-                        let alert = UIAlertController(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", preferredStyle: UIAlertControllerStyle.alert)
-                        alert.addAction(UIAlertAction(title: "OK!", style: UIAlertActionStyle.default, handler: nil))
+                        let alert = UIAlertController(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", preferredStyle: UIAlertController.Style.alert)
+                        alert.addAction(UIAlertAction(title: "OK!", style: UIAlertAction.Style.default, handler: nil))
                         self.present(alert, animated: true, completion: nil)
                     }
                 }
@@ -267,7 +267,7 @@ class Profile : UIViewController {
     
     func wait()
     {
-        RunLoop.current.run(mode: RunLoopMode.defaultRunLoopMode, before: Date(timeIntervalSinceNow: 1))
+        RunLoop.current.run(mode: RunLoop.Mode.default, before: Date(timeIntervalSinceNow: 1))
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

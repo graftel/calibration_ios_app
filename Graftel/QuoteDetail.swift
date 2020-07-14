@@ -16,12 +16,12 @@ class QuoteDetail: UITableViewController {
     var toPass:String!
     var cal_TableData:Array< Array < String >> = Array < Array < String >>()
     var report_TableData:Array< Array < String >> = Array < Array < String >>()
-    let alert = UIAlertController(title:nil, message: "Loading.. Please wait", preferredStyle: UIAlertControllerStyle.alert)
+    let alert = UIAlertController(title:nil, message: "Loading.. Please wait", preferredStyle: UIAlertController.Style.alert)
     
     func showDialog() {
         let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 15, y: 12, width: 37, height: 37))
         loadingIndicator.hidesWhenStopped = true
-        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        loadingIndicator.style = UIActivityIndicatorView.Style.gray
         loadingIndicator.startAnimating();
         alert.view.addSubview(loadingIndicator)
         self.present(alert, animated: true, completion: nil)
@@ -142,8 +142,8 @@ class QuoteDetail: UITableViewController {
                 report_task.resume()
             }
             else {
-                let alert = UIAlertController(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "OK!", style: UIAlertActionStyle.default, handler: nil))
+                let alert = UIAlertController(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "OK!", style: UIAlertAction.Style.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
         }
@@ -159,7 +159,7 @@ class QuoteDetail: UITableViewController {
     
     func wait()
     {
-        RunLoop.current.run(mode: RunLoopMode.defaultRunLoopMode, before: Date(timeIntervalSinceNow: 1))
+        RunLoop.current.run(mode: RunLoop.Mode.default, before: Date(timeIntervalSinceNow: 1))
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -203,7 +203,7 @@ class QuoteDetail: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CellR", for: indexPath) as! ReportCell
             let arr:Array<String> = report_TableData[(indexPath as NSIndexPath).row]
             cell.label?.text = arr[0]
-            cell.button?.addTarget(self, action: #selector(QuoteDetail.View_Report(_:)), for: UIControlEvents.touchUpInside)
+            cell.button?.addTarget(self, action: #selector(QuoteDetail.View_Report(_:)), for: UIControl.Event.touchUpInside)
             cell.button?.tag =  indexPath.row
             return cell
         }
@@ -218,7 +218,7 @@ class QuoteDetail: UITableViewController {
         }
     }
     
-    func View_Report(_ sender: UIButton) {
+    @objc func View_Report(_ sender: UIButton) {
         let pdfviewer = self.storyboard!.instantiateViewController(withIdentifier: "PDF View") as! PDFView
         if sender.tag == 0 {
             //let index1 = self.report_TableData[0][1].index(self.report_TableData[0][1].startIndex, offsetBy: 20)

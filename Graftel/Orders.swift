@@ -32,12 +32,12 @@ class Orders: UITableViewController,SWRevealViewControllerDelegate {
     }
     
     
-    let alert = UIAlertController(title:nil, message: "Loading.. Please wait", preferredStyle: UIAlertControllerStyle.alert)
+    let alert = UIAlertController(title:nil, message: "Loading.. Please wait", preferredStyle: UIAlertController.Style.alert)
     
     func showDialog() {
         let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 15, y: 12, width: 37, height: 37))
         loadingIndicator.hidesWhenStopped = true
-        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        loadingIndicator.style = UIActivityIndicatorView.Style.gray
         loadingIndicator.startAnimating();
         alert.view.addSubview(loadingIndicator)
         self.present(alert, animated: true, completion: nil)
@@ -113,7 +113,7 @@ class Orders: UITableViewController,SWRevealViewControllerDelegate {
                                 var Temp : Array <String> = Array<String>()
                                 let line1 = c!["QuoteID"] as? String
                                 let tem = c!["Description"] as? String
-                                let line = tem?.characters.split{$0 == ","}.map(String.init)
+                                let line = tem?.split{$0 == ","}.map(String.init)
                                 var line2 = ""
                                 for j in 0..<line!.count {
                                     line2 += line![j]
@@ -140,8 +140,8 @@ class Orders: UITableViewController,SWRevealViewControllerDelegate {
                 task.resume()
             }
             else {
-                let alert = UIAlertController(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "OK!", style: UIAlertActionStyle.default, handler: nil))
+                let alert = UIAlertController(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "OK!", style: UIAlertAction.Style.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
         }
@@ -156,7 +156,7 @@ class Orders: UITableViewController,SWRevealViewControllerDelegate {
     
     func wait()
     {
-        RunLoop.current.run(mode: RunLoopMode.defaultRunLoopMode, before: Date(timeIntervalSinceNow: 1))
+        RunLoop.current.run(mode: RunLoop.Mode.default, before: Date(timeIntervalSinceNow: 1))
     }
     
     override func didReceiveMemoryWarning() {
